@@ -1,4 +1,4 @@
-!libs/cartodb.config.php
+libs/cartodb.config.php
 .git/
 .DS_Store
 

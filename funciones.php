@@ -13,17 +13,21 @@
 		exit();
 	}
 
-	if($action == "displayTable") {
+	if($action == "buscaRegistro") {
 		$arg1 = $_REQUEST["arg1"];
-		$arg2 = $_REQUEST["arg2"];
 		$result = $cartodb->runSql("SELECT * FROM tabla_php",false);
 		echo json_encode($result);
 	}
 
-	if($action == "addTable") {
+	if($action == "agregaRegistro") {
 		$arg1 = $_REQUEST["arg1"];
 		$arg2 = $_REQUEST["arg2"];
 		$result = $cartodb->runSql( "INSERT INTO tabla_php ( name , description ) VALUES (' " . $arg1 . "','" . $arg2 . "')",false);
+	}
+
+	if($action == "borraRegistro") {
+		$arg1 = $_REQUEST["arg1"];
+		$result = $cartodb->runSql( "DELETE FROM tabla_php WHERE cartodb_id = " . $arg1 ,false);
 	}
 
 ?>

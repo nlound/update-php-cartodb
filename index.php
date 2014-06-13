@@ -4,34 +4,31 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Escribo en cartoDB</title>
-  	<script src="js/jquery-1.11.1.min.js"></script>
-
-<script>
-	function addDato() {
-		var arg1 = $('#ldesc').val(),
-			arg2 = $('#lnomb').val(),
-		 	query =  "funciones.php?action=addTable&arg1=" + arg1 + "&arg2=" + arg2;
-
-		$.ajax({
-	    	url: query
-	    }).done(function(data) {
-	    	if (data !== ''){
-				console.log(data);
-	    	}
-	    });
-  	}
-	
-</script>
+	<script src="js/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
 
-<form>
+<form name="listado">
+	<h1>Busqueda</h1>
+	<input type="text" id="lbusc">
+	<input type="button" value="Buscar" onclick="javascript:manejoBase('L');"> 
+</form>
+
+<form name="alta">
+	<h1>Alta</h1>
 	Nombre: <input type="text" id="lnomb"><br>
 	Descripción: <input type="text" id="ldesc"><br>
-	<input type="button" name="add" value="Agregar" onclick="javascript:addDato();"> 
+	<input type="button" value="Agregar" onclick="javascript:manejoBase('A');"> 
+</form>
+
+<form name="baja">
+	<h1>Baja</h1>
+	Cartodb_ID: <input type="text" id="lid"><br>
+	<input type="button" value="Borrar" onclick="javascript:manejoBase('B');"> 
 </form>
 
 
+	<script src="js/acciones.js"></script>
 </body>
 </html>

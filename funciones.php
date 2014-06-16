@@ -15,8 +15,9 @@
 
 	if($action == "buscaRegistro") {
 		$arg1 = $_REQUEST["arg1"];
-		$result = $cartodb->runSql("SELECT * FROM tabla_php",false);
+		$result = $cartodb->runSql("SELECT * FROM tabla_php",false); //definir que busco y en donde.
 		echo json_encode($result);
+		
 	}
 
 	if($action == "agregaRegistro") {

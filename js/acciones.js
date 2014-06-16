@@ -29,27 +29,24 @@ function manejoBase(accion){
 	}
 
 	if (accion === "L"){
-		var arg1 = $('#lbusq').val(),
+
+		var arg1 = $('#lbusc').val(),
 			query =  "funciones.php?action=buscaRegistro&arg1=" + arg1 ;
-	}
-
-	var resultado = consultaSQL(query);
-
+		}
+		
+		var resultado = consultaSQL(query);
 
 }
-
-
-
-
-
-
 
 function consultaSQL(param){
 	$.ajax({
 		url: param
-	}).done(function(data) {
+	}).success(function(data) {
 		if (data !== ''){
-			console.log ( data );
+			var resultado = jQuery.parseJSON( data );
+			console.log ( "Cantidad de registros", resultado.return.rows.length );
 		}
+	}).error(function(){
+		console.log("No se pudo completar el comando");
 	});
 }

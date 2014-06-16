@@ -1,10 +1,13 @@
-ABM 2 CartoDB
-=============
+Mapa Emprendedor de la Ciudad Autónoma de Buenos Aires
+======================================================
 
-ABM via PHP a CartoDB
+:En la Ciudad estamos desarrollando el *Mapa Emprendedor*, una plataforma virtual que agrupa a todos los actores que forman parte del ecosistema. 
 
-Backend
--------
+:Con esta herramienta nos proponemos fomentar el intercambio y las relaciones entre la comunidad, así como mostrar el alto potencial y desarrollo que está teniendo la actividad emprendedora en Buenos Aires.
+
+---
+
+###Backend
 
 + Apache 2.22.2 - http://www.apache.org/
 + PHP 5.4.3 - http://www.php.net/
@@ -14,12 +17,36 @@ Backend
 Testeado usando
 + [WAMP server](http://www.wampserver.com/en/)
 
-FrontEnd
---------
+---
+
+###FrontEnd
 
 + Jquery 1.11.1 - http://jquery.com/
+
+---
+
+###Instalación
+
+
+##### Pre-requisitos:
++ [NodeJS](http://nodejs.org/)
++ [npm](http://npmjs.org/) 
++ [Bower](http://bower.io/)
+	npm install -g bower
+
+##### Instalación dev:
+	
+	npm install
+	bower install
+	watch
+
+---
+
 
 Licencia 
 --------
 
 MIT
+
+
+

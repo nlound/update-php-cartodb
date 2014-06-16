@@ -11,6 +11,18 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="icon" href="favicon.ico"/>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.ie.css" />
+    <![endif]-->
+
+
+
+
+
+
 </head>
 
 <body>
@@ -32,8 +44,11 @@
 
     <!-- Main -->
     <div id="contenidos">
-        <a href="test.html">Testear la base</a>
     </div>
+
+
+
+
 
 
 
@@ -47,5 +62,14 @@
             </div>
         </div>
     </footer>
+
+
+<script>
+  window.onload = function() {
+    cartodb.createVis('contenidos', 'http://gcba.cartodb.com/api/v2/viz/3e8ccade-f59c-11e3-ba2c-0e230854a1cb/viz.json');
+  }
+</script>
+
+
 </body>
 </html>

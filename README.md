@@ -38,10 +38,8 @@ Testeado usando
 	
 	npm install
 	bower install
-	watch
 
 ---
-
 
 Licencia 
 --------

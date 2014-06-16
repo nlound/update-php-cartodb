@@ -21,7 +21,7 @@ Testeado usando
 
 ###FrontEnd
 
-+ Jquery 1.11.1 - http://jquery.com/
++ Jquery 1.11.1 - http://jquery.com/ (para compatibilidad con IE8)
 
 ---
 

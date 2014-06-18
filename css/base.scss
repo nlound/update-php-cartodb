@@ -29,6 +29,7 @@ html, body {
 
 
 header {
+    overflow: hidden;
     z-index: 999;
     position: fixed;
     color: #FFF;
@@ -58,19 +59,40 @@ header {
 
 
 #contenidos{
+    overflow: horizontal;
     padding-top: 50px;
-    padding-bottom: 50px;
     background-color: #FFFFFF;
     width: 100%;
     height: 100%;
 }
 
+#mapa{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+#formulario{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #333333;
+    z-index: 999;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    label, input{
+        font-size: 0.7em;
+    }
+}
 
 
 
 footer {
-    z-index: 999;
+    overflow: hidden;
     position: fixed;
     color: #FFF;
     bottom: 0px;

@@ -36,16 +36,16 @@ header {
     top: 0px;
     width: 100%;
     height: 50px; 
-    background-color: #FFCB05;
+    background-color: #ffcc00;
     .logo {
         float: left;
-        margin-top: 9px;
+        margin-top: 8px;
         width:172px;
         height:33px;
         @include retina-image("img/logo-normal", 172px 34px);
     }
     .slogan {
-        padding-top: 9px;
+        padding-top: 8px;
         text-align: right;
         float: right;
         font-family: 'Gotham Black';
@@ -59,6 +59,7 @@ header {
 
 
 #contenidos{
+    z-index: 999;
     overflow: horizontal;
     padding-top: 50px;
     background-color: #FFFFFF;
@@ -67,10 +68,37 @@ header {
 }
 
 #mapa{
+    z-index: 500;
+    float: left;
     width: 100%;
+    padding-right: 270px;
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+#sidebar{
+    width: 270px;
+    height: 100%;
+    background-color: #0070eb;
+    alpha: 0.8;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    li{
+        max-width: 24%;
+    }
+    a{
+        background: transparent;
+        border: 0px;
+        outline: none;        
+    }
+}
+
+#cartodb-gmaps-attribution{
+    right: 270px !important;
 }
 
 #formulario{
@@ -78,9 +106,6 @@ header {
     color: #FFFFFF;
     background-color: #333333;
     z-index: 999;
-    position: absolute;
-    top: 50px;
-    right: 0;
     width: 300px;
     padding-left: 10px;
     padding-right: 10px;

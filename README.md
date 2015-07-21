@@ -1,11 +1,6 @@
-Mapa Emprendedor de la Ciudad Autónoma de Buenos Aires
+Testeos
 ======================================================
 
-:En la Ciudad estamos desarrollando el *Mapa Emprendedor*, una plataforma virtual que agrupa a todos los actores que forman parte del ecosistema. 
-
-:Con esta herramienta nos proponemos fomentar el intercambio y las relaciones entre la comunidad, así como mostrar el alto potencial y desarrollo que está teniendo la actividad emprendedora en Buenos Aires.
-
----
 
 ###Backend
 
